@@ -1,38 +1,236 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css?family=Oswald&display=swap");
+
+body {
+  background-color: #cdd6c2;
+  font-family: "Oswald";
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.wrapper {
   display: flex;
   flex-direction: column;
+  width: 100%;
+}
+.welcometitle {
+  height: 20%;
+  line-height: 3px;
+  font-size: 3em;
+  margin: auto;
+}
+
+.setupWrapper {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.teamNames {
+  display: flex;
+  padding: 30px;
+  width: 40%;
+  flex-direction: column;
+}
+
+.questionSetup {
+  display: flex;
+  width: 60%;
+  padding: 30px;
+  flex-direction: column;
+}
+
+.formLabels {
+  font-size: 1.6em;
+  padding-bottom: 15px;
+}
+
+input[type="text"] {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  padding: 10px 10px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  font-size: 1em;
+  background-color: white;
+  border-radius: 5px;
+}
+
+.selects {
+  display: flex;
+  justify-content: flex-end;
+  width: 80%;
+  padding: 10px 10px;
+  box-sizing: border-box;
+  font-size: 0.65em;
+  background-color: white;
+  border-radius: 5px;
+}
+
+.playGame {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.playButton {
+  background-color: #291f1e;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  border-radius: 10px;
+}
+
+.quizWrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-color: #cdd6c2;
+}
+.questionBand {
+  display: flex;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  height: 120px;
+  background: #130814;
   color: white;
+  font-size: 2.2em;
 }
 
-.App-link {
-  color: #61dafb;
+.questionText {
+  width: 900px;
+  line-height: 40px;
+}
+.questionRowSetup {
+  display: flex;
+  justify-self: end;
+  width: 100%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.teamQuesionsList {
+  width: 80%;
+  margin: auto;
+  padding: 20px;
+  font-size: 2.2em;
+  line-height: 1px;
+}
+
+.teamSetup {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  border: 1px solid black;
+}
+
+.playerOneScore {
+  display: flex;
+  flex-direction: row;
+  padding-left: 10%;
+  padding-right: 10%;
+  justify-content: space-between;
+  color: white;
+  background-color: #af322d;
+  font-size: 2.4em;
+}
+
+.playerTwoScore {
+  display: flex;
+  flex-direction: row;
+  padding-left: 10%;
+  padding-right: 10%;
+  justify-content: space-between;
+  color: white;
+  background-color: #006593;
+  font-size: 2.4em;
+}
+
+input[type="radio"] {
+  width: 10%;
+  height: 2em;
+}
+
+.answerBar {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background: #130814;
+  height: 50px;
+  width: 100%;
+}
+
+.answerButton {
+  width: 180px;
+  height: 50px;
+  font-size: 1.5em;
+  font-family: "Oswald";
+  font-style: bold;
+}
+
+.finishedWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #af322d;
+  height: 100vh;
+}
+
+.finishedTexBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #cdd6c2;
+  font-size: 3em;
+}
+
+.finishedTexBox h1 {
+  font-size: 1.6em;
+}
+
+.finishButton {
+  width: 300px;
+  font-size: 1.2em;
+  font-family: "Oswald";
+  font-style: bold;
+}
+
+.finishedText {
+  font-size: 2.5em;
+  color: #cdd6c2;
+
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+}
+
+.answerStrip {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  width: 100%;
+  height: 50px;
+  color: white;
+  font-size: 1.8em;
+  background-color: darkcyan;
+}
+
+.wrongText {
+  font-size: 3em;
+  color: white;
+  line-height: 3px;
+}
+.timer {
+  color: white;
+  font-size: 1.8em;
+}
+
+.timerCircle {
+  display: flex;
+  flex-direction: row;
+  height: 110px;
+  width: 110px;
+  justify-content: center;
+  background-color: red;
+  border-radius: 100px;
 }
